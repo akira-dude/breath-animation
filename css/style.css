@@ -1,0 +1,450 @@
+.breath-animation-container {
+	height: 500px;
+	width: 500px;
+	background: url('../hero_medium.png') no-repeat center;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.breath-animation {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	margin: auto;
+	margin-top: -40px;
+}
+
+@-webkit-keyframes breath {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		height: 20px;
+		width: 20px;
+		left: 50%;
+		top: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		height: 70px;
+		width: 70px;
+		left: 0%;
+		top: 0%;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		height: 20px;
+		width: 20px;
+		left: 50%;
+		top: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+}
+
+.breath-start-point {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	-webkit-animation: breath 8s infinite ease-in-out;
+	animation: breath 8s infinite ease-in-out;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.breath-circle {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border-radius: 100%;
+	opacity: .5;
+	z-index: 1;
+	mix-blend-mode: screen;
+}
+
+@-webkit-keyframes breath-circle-1 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 35%;
+		right: 35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-1 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 35%;
+		right: 35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(1) {
+	-webkit-animation: breath-circle-1 8s infinite ease-in-out;
+	animation: breath-circle-1 8s infinite ease-in-out;
+	background: rgb(69, 151, 155);
+}
+
+@-webkit-keyframes breath-circle-2 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 50%;
+		right: 0%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-2 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 50%;
+		right: 0%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(2) {
+	-webkit-animation: breath-circle-2 8s infinite ease-in-out;
+	animation: breath-circle-2 8s infinite ease-in-out;
+	background: rgb(67, 147, 153);
+}
+
+@-webkit-keyframes breath-circle-3 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 35%;
+		right: -35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-3 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 35%;
+		right: -35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(3) {
+	-webkit-animation: breath-circle-3 8s infinite ease-in-out;
+	animation: breath-circle-3 8s infinite ease-in-out;
+	background: rgb(74, 161, 156);
+}
+
+@-webkit-keyframes breath-circle-4 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -35%;
+		right: -35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-4 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -35%;
+		right: -35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(4) {
+	-webkit-animation: breath-circle-4 8s infinite ease-in-out;
+	animation: breath-circle-4 8s infinite ease-in-out;
+	background: rgb(79, 181, 156);
+}
+
+@-webkit-keyframes breath-circle-5 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -50%;
+		right: 0%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-5 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -50%;
+		right: 0%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(5) {
+	-webkit-animation: breath-circle-5 8s infinite ease-in-out;
+	animation: breath-circle-5 8s infinite ease-in-out;
+	background: rgb(80, 191, 148);
+}
+
+@-webkit-keyframes breath-circle-6 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -35%;
+		right: 35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-6 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: -35%;
+		right: 35%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(6) {
+	-webkit-animation: breath-circle-6 8s infinite ease-in-out;
+	animation: breath-circle-6 8s infinite ease-in-out;
+	background: rgb(84, 192, 150);
+}
+
+@-webkit-keyframes breath-circle-7 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 0%;
+		right: 50%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-7 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 0%;
+		right: 50%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(7) {
+	-webkit-animation: breath-circle-7 8s infinite ease-in-out;
+	animation: breath-circle-7 8s infinite ease-in-out;
+	background: rgb(77, 183, 151);
+}
+
+@-webkit-keyframes breath-circle-8 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 0%;
+		right: -50%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes breath-circle-8 {
+	0% {
+		right: 0;
+		bottom: 0;
+	}
+	50% {
+		bottom: 0%;
+		right: -50%;
+	}
+	100% {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.breath-circle:nth-child(8) {
+	-webkit-animation: breath-circle-8 8s infinite ease-in-out;
+	animation: breath-circle-8 8s infinite ease-in-out;
+	background: rgba(94, 156, 160, 0.77);
+}
+
+@-webkit-keyframes breath-shadow {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		height: 0%;
+		width: 0%;
+	}
+	50% {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	90% {
+		left: 5%;
+		top: 5%;
+		height: 90%;
+		width: 90%;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes breath-shadow {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		height: 0%;
+		width: 0%;
+	}
+	50% {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	90% {
+		left: 5%;
+		top: 5%;
+		height: 90%;
+		width: 90%;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+.breath-shadow {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .3;
+	-webkit-animation: breath-shadow 8s infinite ease-in-out;
+	animation: breath-shadow 8s infinite ease-in-out;
+	z-index: 1;
+}
+
+.breath-shadow .breath-circle {
+	opacity: .1;
+}
